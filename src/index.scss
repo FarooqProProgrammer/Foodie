@@ -1,0 +1,47 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../node_modules/bootstrap/scss/functions.scss";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/variables-dark";
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/utilities";
+
+
+$utilities: map-merge($utilities,
+        ("cursor": (property: cursor,
+                class: cursor,
+                responsive: true,
+                values: auto pointer grab,
+            )));
+
+
+@import "../node_modules/bootstrap/scss/utilities/api";
+
+
+
+
+body {
+    font-family: "Inter";
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.MerriweatherFont {
+    font-family: 'Merriweather', serif;
+}
+
+.card  { 
+    border: none !important;
+
+    @extend shadow !optional;
+}
+
+.popularCategorieImage { 
+    img { 
+        width: 120px !important; 
+        height: 120px !important;
+        margin:0 auto;
+    }
+
+}

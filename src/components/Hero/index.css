@@ -1,0 +1,25 @@
+.heroSection { 
+    background-color: #E3F1FF;
+    border-radius: 30px;
+}
+
+.heroSection img { 
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.heroContent {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.heroContent h6 { 
+    font-size: 14px;
+    text-transform: capitalize;
+}
